@@ -8,4 +8,10 @@ jobs:
     steps: #pasos que se ejecutan en el runner, minimo uno.
       - name: Hola Mundo
         run: echo "Hola mundo" #comando que se ejecuta en el runner
+
+  second_job:
+    runs-on: ubuntu-latest #especifica el SO del runner
+    steps: #pasos que se ejecutan en el runner, minimo uno.
+      - name: Hola Mundo
+        run: echo "Hola mundo segundo" #comando que se ejecuta en el runner
       
