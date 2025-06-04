@@ -10,6 +10,7 @@ jobs:
         run: echo "Hola mundo" #comando que se ejecuta en el runner
 
   second_job:
+    needs: first_jobs #indica que depende del primer job. puede haber una lista de dependencia, en formato de lista
     runs-on: ubuntu-latest #especifica el SO del runner
     steps: #pasos que se ejecutan en el runner, minimo uno.
       - name: Hola Mundo
