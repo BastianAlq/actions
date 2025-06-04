@@ -1,0 +1,11 @@
+name: Deploy to server #Directiva inicial del workflow. no es necesario ponerlo en comillas
+
+on: push #evento que dispara el workflow
+
+jobs: 
+  first_jobs:
+    runs-on: ubuntu-latest #especifica el SO del runner
+    steps: #pasos que se ejecutan en el runner, minimo uno.
+      - name: Hola Mundo
+        run: echo "Hola mundo" #comando que se ejecuta en el runner
+      
